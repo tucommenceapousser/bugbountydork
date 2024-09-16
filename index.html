@@ -92,5 +92,17 @@
                 <img src="http://trnbugbnty.0delta.cz/Youtube-01.svg" width="150" height="150">
             </a>
         </div>
+        <script>
+    // Baisse le volume de la vidéo de moitié
+    const video = document.getElementById('myVideo');
+    video.volume = 0.5;  // Volume réglé à 50%
+
+    // Empêche le clic droit sur la vidéo et affiche une alerte
+    video.addEventListener('contextmenu', function(e) {
+        e.preventDefault();  // Empêche le menu contextuel (clic droit)
+        alert('Clic droit désactivé ! Action non autorisée par TRHACKNON.');  // Affiche une alerte
+    });
+</script>
+
     </body>
     </html>"
